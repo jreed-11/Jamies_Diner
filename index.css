@@ -1,0 +1,179 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+    margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+    font-family: 'Smythe', cursive;
+    margin: 0px auto;
+    width: 60rem;    
+}
+
+/* Header Styling */
+
+header {
+    background-image: url(images/header_restaurant_image.png);
+    background-size: cover;
+    color: #fff;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0px 0px 70px 0px;
+    padding: 4.6rem 0rem 7rem 4.6rem;
+}
+.header-title {
+    font-size: 3.9rem;
+    line-height: 2.4rem;
+    margin-bottom: 1.9rem;
+}
+
+.header-tagline {
+    font-size: 2.2rem;
+}
+
+/* Menu Items */
+
+.menu-section {
+    margin: 0 auto;
+    margin-bottom: 4.5rem;
+    width: 50.1rem; 
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    margin: 5rem 0 5rem 0;
+}
+.item-wrapper{
+    display: flex;
+    justify-content: space-between;
+    gap: 3.1rem;
+}
+
+.item-name, 
+.item-ingredients {
+  padding-bottom: 0.8rem;
+}
+
+.item-img {
+    height: 8rem;
+    width: 7rem;    
+}
+
+.item-name{
+    font-size: 2.8rem;
+    font-weight: 400;
+   
+}
+
+.item-ingredients{
+    color: #8b8b8b;
+    font-size: 1.6rem;
+    
+}
+
+.item-price{
+    color: #000000;
+    font-size: 2rem;
+    
+}
+
+.item-btn {
+   background-color: #fff;
+   border: 1.5px solid #DEDEDE;
+   border-radius: 100%;
+   cursor: pointer;
+   font-family: 'Inter', sans-serif;
+   font-size: 3.5rem;
+   height: 50px;
+   text-align: center;
+   width: 50px;
+   
+}
+
+.item-divider{
+    border: 1px solid #D2D2D2;
+}
+
+/* order section  */
+
+.order-section{
+    border: 1px solid red;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    width: 50.1rem;
+}
+
+.order-title{
+    font-family: 'Smythe', cursive;
+    font-size: 2.8rem;
+    margin-bottom: 6.4rem;
+    text-align: center;
+}
+
+.total {
+    border-top: #393333 solid 2px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Smythe', cursive;
+    font-size: 2.8rem;
+    padding-top: 1.4rem;
+    margin: 2rem 0 5.5rem 0;
+}
+
+.your-order {
+    display: flex;
+    justify-content: space-between;
+}
+
+.order-item-details {
+    display: flex;
+    font-size: 2.8rem;
+    gap: 1.3rem;
+    line-height: 1.6rem;
+    margin-bottom: 2.2rem;
+}
+
+.order-remove-btn {
+    border: none;
+    color: #8b8b8b;
+    cursor: pointer;
+    background-color: #fff;  
+    line-height: 2.4rem;
+}
+
+.order-remove-btn:hover{
+    text-decoration: underline;
+}
+
+/* utility Class */
+
+/* .hidden {
+    display: none;
+} */
+
+.style-btn1{
+    background-color: #16DB99;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 1.6rem;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0 auto;
+    padding: 1.8rem;
+    text-align: center;
+   width: 100%;   
+}
+
+.style-btn1:hover{
+    box-shadow: 0px 0px 5px 7px #D2D2D2;
+}

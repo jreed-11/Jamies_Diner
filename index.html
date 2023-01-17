@@ -1,0 +1,53 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Smythe&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <p class="header-title">Jamie's Diner</p>
+      <p class="header-tagline">The best burgers and pizzas in town</p>
+    </header>
+    <main>
+      <section class="menu-section" id="menu-section">
+        <!-- menu items to be rendered here -->
+      </section>
+
+      <section class="order-section" id="order-section">
+        <div class="order-item" id="order-item">
+          <h3 class="order-title">Your order</h3>
+        </div>
+
+        <div class="order-display" id="order-display">
+          <!-- your order to be rendered here -->
+        </div>
+
+        <div class="total" id="total">
+          <p>Total Price</p>
+          <p id="total-price">£0</p>
+        </div>
+
+        <button class="complete-order-btn style-btn1" id="complete-order-btn">
+          Complete Order
+        </button>
+      </section>
+    </main>
+    <section
+      class="card-details-modal hidden"
+      id="card-details-modal"
+    ></section>
+    <!-- modal to be rendered here -->
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
