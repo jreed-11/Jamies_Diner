@@ -43,10 +43,31 @@
         </button>
       </section>
     </main>
-    <section
-      class="card-details-modal hidden"
-      id="card-details-modal"
-    ></section>
+
+    <section class="card-details-modal" id="card-details-modal">
+      <div class="close-modal-btn-container">
+        <button class="modal-close-btn" id="modal-close-btn">X</button>
+      </div>
+
+      <div class="modal-inner" id="modal-inner">
+        <h2 class="modal-title">Enter Your Card Details</h2>
+        <form id="card-details-form">
+          <input
+            type="text"
+            name="fullName"
+            placeholder="Enter Your Name"
+            required
+          />
+          <input
+            type="number"
+            name="cardNumber"
+            placeholder="Enter Card Number"
+            required
+          />
+          <input type="number" name="CVV" placeholder="Enter CVV" required />
+        </form>
+      </div>
+    </section>
     <!-- modal to be rendered here -->
     <script src="index.js" type="module"></script>
   </body>
