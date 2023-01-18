@@ -11,6 +11,8 @@ let totalPrice = 0;
 document.addEventListener('click', function(e){
   if(e.target.dataset.item) {
     handleMenuClick(e.target.dataset.item)
+  } else if(e.target.dataset.remove) {
+    handleRemoveClick(e.target.dataset.remove)
   }
   
 })
@@ -46,6 +48,29 @@ function handleMenuClick(itemId) {
     render()
 
 }
+
+// Remove Items //
+
+function handleRemoveClick(item){
+  let targetItem = menuArray.filter(function(removeItem){
+    return  parseInt(item) === removeItem.id
+  })[0]
+
+  if(targetItem.quantity > 1){
+    targetItem.quantity--
+  } else {
+    let itemIndex = myOrderArray.indexOf(targetItem)
+    myOrderArray.splice(itemIndex, 1)
+  }
+
+  targetItem -= targetItem.price
+  totalPriceEl.textContent = `£${totalPrice}`
+
+  
+  render()
+}
+
+
 
 // Get Menu Items //
 
@@ -89,7 +114,7 @@ function yourOrder(){
           
           <div class="order-item-details">     
             <p class="order-item-name">${item.name}</p>
-            <button class="order-remove-btn" data-remove"${item.id}">Remove</button>
+            <button class="order-remove-btn" data-remove="${item.id}">Remove</button>
             <p class="item-quantity">x ${item.quantity}</p>        
           </div>
 
