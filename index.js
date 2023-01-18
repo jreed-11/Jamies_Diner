@@ -70,6 +70,13 @@ function handleRemoveClick(item){
   render()
 }
 
+const orderBtn = document.getElementById('complete-order-btn')
+const modal = document.getElementById('card-details-modal')
+
+orderBtn.addEventListener('click', function(){
+  modal.style.display = 'block'
+})
+
 
 
 // Get Menu Items //

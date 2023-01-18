@@ -152,11 +152,32 @@ header {
     text-decoration: underline;
 }
 
+/* Card Details Modal */
+
+.card-details-modal{
+    border: 1px solid purple;
+    background-color: #FFF;
+    display: block;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    margin: auto;
+    height: 54rem;
+    width: 55rem;
+}
+
+.close-modal-btn-container{
+    text-align: right;
+    margin: 1.5rem;
+}
+
 /* utility Class */
 
-/* .hidden {
+.hidden {
     display: none;
-} */
+}
 
 .style-btn1{
     background-color: #16DB99;
