@@ -59,13 +59,24 @@
             required
           />
           <input
-            type="number"
+            type="text"
             name="cardNumber"
+            pattern="[0-9]"
+            maxlength="16"
             placeholder="Enter Card Number"
             required
           />
-          <input type="number" name="CVV" placeholder="Enter CVV" required />
-          <button class="style-btn1 pay-btn" id="pay-btn">Pay</button>
+          <input
+            type="text"
+            name="CVV"
+            pattern="[0-9]"
+            maxlength="3"
+            placeholder="Enter CVV"
+            required
+          />
+          <button type="submit" class="style-btn1 pay-btn" id="pay-btn">
+            Pay
+          </button>
         </form>
       </div>
     </section>

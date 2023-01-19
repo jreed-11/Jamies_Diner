@@ -15,8 +15,10 @@ document.addEventListener('click', function(e){
     handleRemoveClick(e.target.dataset.remove)
   } else if(e.target.id === 'complete-order-btn'){
     modal.style.display = 'block'
-  } else if(e.target.id === 'modal-close-btn') {
+  } else if(e.target.id === 'modal-close-btn'){
     modal.style.display = 'none'
+  } else if(e.target.id ==='pay-btn'){
+    paymentBtnClick(e.target.id ==='pay-btn')
   }
   
 })
@@ -72,6 +74,10 @@ function handleRemoveClick(item){
 
   
   render()
+}
+
+function paymentBtnClick(){
+    // gif https://i.gifer.com/VM3x.gif
 }
 
 

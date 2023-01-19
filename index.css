@@ -104,7 +104,7 @@ header {
 /* order section  */
 
 .order-section{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin: 0 auto;
     margin-bottom: 1rem;
     width: 50.1rem;
@@ -155,9 +155,9 @@ header {
 /* Card Details Modal */
 
 .card-details-modal{
-    border: 1px solid purple;
+    border: 1px solid #757575;
     background-color: #FFF;
-    display: block;
+    display: none;
     position: fixed;
     top: 0px;
     right: 0px;
@@ -239,5 +239,6 @@ input:focus{
 }
 
 .style-btn1:hover{
+    border: none;
     box-shadow: 0px 0px 5px 7px #D2D2D2;
 }
