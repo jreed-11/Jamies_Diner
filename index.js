@@ -1,23 +1,27 @@
 import {menuArray} from '/data.js'
 
 const totalPriceEl = document.getElementById('total-price')
-
+const modal = document.getElementById('card-details-modal')
 let myOrderArray = [];
 let totalPrice = 0;
 
 
-
+// Click Functions //
 
 document.addEventListener('click', function(e){
   if(e.target.dataset.item) {
     handleMenuClick(e.target.dataset.item)
   } else if(e.target.dataset.remove) {
     handleRemoveClick(e.target.dataset.remove)
+  } else if(e.target.id === 'complete-order-btn'){
+    modal.style.display = 'block'
+  } else if(e.target.id === 'modal-close-btn') {
+    modal.style.display = 'none'
   }
   
 })
 
-// Click Functions //
+
 
 function handleMenuClick(itemId) {
   let targetItem = menuArray.filter(function(item){
@@ -69,14 +73,6 @@ function handleRemoveClick(item){
   
   render()
 }
-
-const orderBtn = document.getElementById('complete-order-btn')
-const modal = document.getElementById('card-details-modal')
-
-orderBtn.addEventListener('click', function(){
-  modal.style.display = 'block'
-})
-
 
 
 // Get Menu Items //
