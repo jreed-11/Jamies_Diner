@@ -2,8 +2,10 @@ import {menuArray} from '/data.js'
 
 const totalPriceEl = document.getElementById('total-price')
 const modal = document.getElementById('card-details-modal')
+const cardDetalsForm = document.getElementById('card-details-form')
 let myOrderArray = [];
 let totalPrice = 0;
+let fullName = document.getElementById("fullName")
 
 
 // Click Functions //
@@ -21,6 +23,10 @@ document.addEventListener('click', function(e){
     paymentBtnClick(e.target.id ==='pay-btn')
   }
   
+})
+
+cardDetalsForm.addEventListener('submit', function(e){
+  e.preventDefault()
 })
 
 
@@ -42,15 +48,7 @@ function handleMenuClick(itemId) {
     totalPrice += targetItem.price
     totalPriceEl.textContent =`£${totalPrice}`
 
-    // if(myOrderArray.length > 0) {
-    //   // document.getElementById('order-section').classList.remove('hidden')
-    //   // document.getElementById('order-display').classList.remove('hidden')
-      
-    // }
-
-    // document.getElementById('your-order').classList.remove('hidden')
-    // document.getElementById('order-item-details').classList.remove('hidden')
-    // document.getElementById('item-quantity').textContent = `x${targetItem.quantity}`
+    
     render()
 
 }
@@ -77,7 +75,29 @@ function handleRemoveClick(item){
 }
 
 function paymentBtnClick(){
-    // gif https://i.gifer.com/VM3x.gif
+    modal.innerHTML = `
+        <div class="modal-inner">
+          <img src="https://i.gifer.com/VM3x.gif"/>
+          <p class="processing-payment">proceesing your payment</p>        
+        </div>
+    `
+
+    setTimeout(function(){
+      modal.style.display = 'none'
+    },2900)
+    
+    setTimeout(function(){
+      document.getElementById('order-section').innerHTML = `
+        <div class="payment-complete">
+          <p class="thank-you-message">Thank you ${fullName.value}! Your order is on it's way</p>
+        </div>
+      `
+     },3000)
+
+    //  setTimeout(function(){
+    //   render()
+    //  },3100)
+      
 }
 
 

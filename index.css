@@ -216,6 +216,23 @@ input:focus{
     box-shadow: 0px 0px 5px 5px #16DB99 ;
 }
 
+/* processing payment modal */
+
+.processing-payment {
+    font-size: 4rem;
+}
+
+.payment-complete{
+    background-color: #ECFDF5;
+}
+
+.thank-you-message{
+    color: #065F46;
+    font-size: 2.5rem;
+    padding: 4rem 5rem;
+    text-align: center;
+}
+
 /* utility Class */
 
 .hidden {
