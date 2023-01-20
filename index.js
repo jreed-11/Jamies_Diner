@@ -74,6 +74,10 @@ function handleRemoveClick(item){
   render()
 }
 
+function reset() {
+ location.reload()
+}
+
 function paymentBtnClick(){
     modal.innerHTML = `
         <div class="modal-inner">
@@ -94,9 +98,10 @@ function paymentBtnClick(){
       `
      },3000)
 
-    //  setTimeout(function(){
-    //   render()
-    //  },3100)
+ setTimeout(function(){
+  reset()
+ },8000)
+
       
 }
 
