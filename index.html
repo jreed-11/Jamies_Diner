@@ -58,15 +58,27 @@
             placeholder="Enter Your Name"
             id="fullName"
             required
-            vaule=""
+            value=""
           />
           <input
             type="text"
             name="cardNumber"
             placeholder="Enter Card Number"
+            maxlength="16"
+            pattern="[0-9]"
+            required
+            value=""
+          />
+          <input
+            type="text"
+            name="CVV"
+            placeholder="Enter CVV"
+            maxlength="3"
+            pattern="[0-9]"
+            required
+            value=""
             required
           />
-          <input type="text" name="CVV" placeholder="Enter CVV" required />
           <button type="submit" class="style-btn1 pay-btn" id="pay-btn">
             Pay
           </button>
